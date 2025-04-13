@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Madimi+One&family=Outfit:wght@100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body id="dices-page">
+
+    <% let diceText = (numberOfPlayers === 1) ? "dice" : "dices"; %>
+    <h1 class="page-heading">Roll the <%= diceText %></h1>
+
+    <div class="dices">
+        <% for (let i = 0; i < numberOfPlayers; i++) { %>
+            <div>
+                <p><%= playerNames[i] || `Player ${i+1}` %></p>
+                <img src="/images/dice1.png" class="dice-img" alt="dice" width="150" data-player-name="<%= playerNames[i] || `Player ${i+1}` %>">
+            </div>
+        <% } %>
+    </div>
+    
+    <button class="roll-button" onclick="rollDice()">Roll the <%= diceText %></button>
+    
+    
+    <script src="/dice.js"></script>
+</body>
+</html>

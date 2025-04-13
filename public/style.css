@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #FFFAEC;
+    color: #FFFAEC;
+    font-family: "Josefin Sans";
+}
+#dices-page{
+    background-color: #343F56;
+    color: #FFFAEC;
+    font-size: 20px;
+    text-align: center;
+}
+
+.forum-container {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: #343F56;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-size: 20px;
+}
+textarea {
+    resize: none;
+}
+.form-group {
+    margin: 10px 0;
+}
+.nicknames{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+input[type="number"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #343F56;
+    border-radius: 10px;
+    background-color: #FFFAEC;
+    font-family: "Josefin Sans";
+    color: #343F56;
+    margin: 2px;
+}
+input:focus, input:hover, 
+textarea:focus, textarea:hover {
+    outline: none;
+    border-color: #343F56;
+    box-shadow: 0 0 5px #B7B7B7;
+}
+/* Для всех скроллбаров в input и textarea */
+textarea::-webkit-scrollbar,
+input::-webkit-scrollbar {
+  width: 8px; /* ширина вертикального скролла */
+  height: 8px; /* высота горизонтального скролла */
+}
+textarea::-webkit-scrollbar-track,
+input::-webkit-scrollbar-track {
+  background: #FFFAEC; /* цвет фона скролл-трека */
+  border-radius: 10px;
+}
+textarea::-webkit-scrollbar-thumb,
+input::-webkit-scrollbar-thumb {
+  background-color: #888; /* сам "ползунок" */
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+textarea::-webkit-scrollbar-thumb:hover,
+input::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+textarea, input {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f0f0f0;
+} 
+
+button {
+    background-color: #FFFAEC;
+    color: #343F56;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
+}
+button:focus, button:hover {
+    outline: none;
+    border-color: #343F56;
+    box-shadow: 0 0 5px #B7B7B7;
+}
+.roll-button{
+    width: 130px;
+}
+
+.dices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+img {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h1{
+    margin-top: 40px;
+}
