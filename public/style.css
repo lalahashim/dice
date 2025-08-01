@@ -56,20 +56,20 @@ textarea:focus, textarea:hover {
     border-color: #343F56;
     box-shadow: 0 0 5px #B7B7B7;
 }
-/* Для всех скроллбаров в input и textarea */
+
 textarea::-webkit-scrollbar,
 input::-webkit-scrollbar {
-  width: 8px; /* ширина вертикального скролла */
-  height: 8px; /* высота горизонтального скролла */
+  width: 8px;
+  height: 8px;
 }
 textarea::-webkit-scrollbar-track,
 input::-webkit-scrollbar-track {
-  background: #FFFAEC; /* цвет фона скролл-трека */
+  background: #FFFAEC;
   border-radius: 10px;
 }
 textarea::-webkit-scrollbar-thumb,
 input::-webkit-scrollbar-thumb {
-  background-color: #888; /* сам "ползунок" */
+  background-color: #888;
   border-radius: 10px;
   border: 2px solid transparent;
   background-clip: content-box;
@@ -107,8 +107,10 @@ button:focus, button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    flex-wrap: wrap;
     text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 img {
@@ -118,4 +120,11 @@ img {
 
 h1{
     margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .forum-container {
+        width: 80%;
+    }
 }
